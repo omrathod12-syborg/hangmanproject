@@ -1,0 +1,31 @@
+Hangman Game Project Report
+Introduction
+This project implements a graphical Hangman game using the Pygame library in Python. The game provides a simple interactive interface where the player guesses a hidden word or phrase by clicking letter buttons. A hangman drawing progresses with each incorrect guess. The project aims to showcase basic game development concepts, graphical user interface handling, and event-driven programming in Python.
+
+Objectives
+Develop an interactive Hangman game using Pygame.
+
+Load words dynamically from an external word list file.
+
+Implement clickable buttons for each alphabet letter.
+
+Display real-time feedback with graphical hangman stages based on user guesses.
+
+Provide clear win and loss conditions and allow replay without restarting the program.
+
+Methodology
+The game window is set to 700x480 pixels and uses a green background. The interface features 26 circle-shaped buttons arranged in two rows, each labeled with a letter (A-Z). When clicked, a button guesses that letter and disables itself.
+
+A hidden word or phrase is randomly selected from a text file (words.txt). Spaces in phrases are supported and displayed correctly. As correct letters are guessed, they replace underscores in the displayed word.
+
+Incorrect guesses increase the hangman figure, represented by a series of seven images (hangman0.png to hangman6.png). The game ends with a loss after 6 wrong guesses or a win if the player guesses the entire word.
+
+The game processes events like mouse clicks for guesses and keyboard input to restart or quit. Upon finishing a round, a message displays the win/loss status and the full phrase, awaiting user input for the next game.
+
+Results
+The game runs smoothly with responsive button clicks and graphical updates. The hangman images provide clear visual feedback on progress. Word selection from the external file allowed easy customization. The interface is simple but intuitive, making gameplay straightforward.
+
+Conclusion
+This project successfully illustrated the principles of event-driven game programming using Pygame. It demonstrated managing user inputs, rendering graphics, and sequencing game states. The modular approach allows easy modification or extension, such as adding difficulty levels or animating transitions.
+
+The project serves as a foundational exercise in interactive Python game development and can be extended into more advanced projects.
